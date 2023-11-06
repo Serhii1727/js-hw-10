@@ -45,6 +45,7 @@ function renderCatByBread(event) {
 function onFetchErorr(error) {
     console.log(error);
     Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
+    refs.loader.classList.add('is-hidden');
 }
 
 function makeCardOfCat(data) {
