@@ -4,14 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./slimselect.css">
   <title>Homework 10</title>
 </head>
 
 <body>
-  <select class="breed-select"></select>
-  <p class="loader">Loading data, please wait...</p>
-  <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-  <div class="cat-info"></div> Test
+  <div class='select-container is-hidden'>
+    <select class="breed-select"></select>
+  </div>
+  <div class="container-loader">
+    <span class="loader"></span>
+    <p>Loading data, please wait...</p>
+  </div>
+
+  <div class="cat-info"></div>
 
   <script src="index.js" type="module"></script>
 </body>
